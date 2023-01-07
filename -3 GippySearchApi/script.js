@@ -3,9 +3,10 @@ const inp=document.querySelector(".inp");
 const main=document.querySelector(".main");
 // api request in XMLHttpRequest
 
-
-
-const url="https://api.giphy.com/v1/gifs/search?api_key=4NoUyrwgv51B1BcgzQjQ4kVOQ71cWkFg&q=water&limit=25&offset=0&rating=g&lang=en"
+btn.addEventListener("click", function(){
+    alert(inp.value)
+})
+const url=`https://api.giphy.com/v1/gifs/search?api_key=4NoUyrwgv51B1BcgzQjQ4kVOQ71cWkFg&q=${}&limit=25&offset=0&rating=g&lang=en`
 const call=new XMLHttpRequest();
 call.open("GET", url);
 call.send();
